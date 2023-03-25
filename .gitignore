@@ -2,7 +2,15 @@
 .idea/
 HELP.md
 target/
-!.mvn/wrapper/maven-wrapper.jar
+
+!.mvn/wrapper/
+!mvnw
+!mvnw.cmd
+!package-lock.json
+!package.json
+!tsconfig.json
+!types.d.ts
+!vite.config.ts
 !**/src/main/**/target/
 !**/src/test/**/target/
 out/
