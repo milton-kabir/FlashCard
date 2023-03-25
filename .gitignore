@@ -1,11 +1,34 @@
 /target/
 .idea/
-.vscode/
-.settings
-.project
-.classpath
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+out/
 
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
 *.iml
+*.ipr
+
+### VS Code ###
+.vscode/
+
+### Project Specific ###
+logs/
+*.log
+
 .DS_Store
 
 # The following files are generated/updated by vaadin-maven-plugin
