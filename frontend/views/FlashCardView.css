@@ -14,10 +14,6 @@
   font-size: 48px;
   font-family: "Aleo", serif;
   color: rgb(149 19 19);
-  /*opacity: 0.9;*/
-  /*text-shadow: -5px 3px 0 rgb(66, 45, 45);*/
-  /*letter-spacing: 3px;*/
-
 }
 
 .form-container {
@@ -30,22 +26,6 @@
   display: flex;
   flex-direction: column;
 }
-
-/*@media only screen and (min-width: 500px) {*/
-/*  .form-container {*/
-/*    flex-direction: row;*/
-/*    align-items: center;*/
-/*  }*/
-
-/*  .form-group {*/
-/*    margin-right: 1rem;*/
-/*    flex: 1;*/
-/*  }*/
-
-/*  .form-group:last-child {*/
-/*    margin-right: 0;*/
-/*  }*/
-/*}*/
 
 .flashcard-container {
   margin-top: 2rem;
@@ -67,61 +47,66 @@
   gap: 1rem;
   width: 100%;
   margin-bottom: 20px;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.form-group vaadin-text-field input{
+.form-group vaadin-text-field input {
   padding: 8px 10px;
   border-radius: 4px;
 }
-.form-group vaadin-text-field input::placeholder{
+
+.form-group vaadin-text-field input::placeholder {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   color: #767676;
 }
-#formBtn{
-   width: 140px;
-    height: 50px;
-    background: #34A03A;
-    border-radius: 4px;
-    border: none;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 32px;
-    color: #F3FFF1;
-}
-/*.FlashcardWrapper__item--front{*/
-/* font-weight: 600;*/
-/*}*/
-.FlashcardWrapper__item--front{
-font-size: 32px;
-font-weight: 700;
-}
-.FlashcardWrapper__item--back{
-font-size: 32px;
-font-weight: 700;
-}
-/*@media only screen and (min-width: 500px) {*/
-/*  .form-container {*/
-/*    flex-direction: row;*/
-/*    align-items: center;*/
-/*  }*/
 
-/*  .form-group {*/
-/*    margin-right: 1rem;*/
-/*    flex: 1;*/
-/*  }*/
+#formBtn {
+  width: 140px;
+  height: 50px;
+  background: #34A03A;
+  border-radius: 4px;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  color: #F3FFF1;
+}
 
-/*  .form-group:last-child {*/
-/*    margin-right: 0;*/
-/*  }*/
-/*}*/
+.FlashcardArrayWrapper__controls--count {
+  font-weight: 700;
+}
+
+.FlashcardWrapper__item--front {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.FlashcardWrapper__item--back {
+  font-size: 32px;
+  font-weight: 700;
+}
 
 .flashcard-container {
   margin-top: 2rem;
   width: 100%;
   max-width: 800px;
+}
+
+@media only screen and (max-width: 688px) {
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
 }
